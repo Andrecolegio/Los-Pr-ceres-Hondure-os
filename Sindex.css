@@ -1,0 +1,182 @@
+   body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #005a87;
+      color: white;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .logo {
+      width: 99%;
+      padding-top: 1%;
+    }
+    nav {
+      background-color: #003d5b;
+      padding: 10px 0;
+    }
+    nav .menu {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+    }
+    nav a,
+    nav .dropbtn {
+      color: white;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 16px;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+    nav a:hover,
+    .dropdown:hover .dropbtn {
+      background-color: #ddd;
+      color: black;
+    }
+    .dropdown {
+      position: relative;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #003d5b;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 12px 16px;
+      display: block;
+      text-align: justify;
+      text-decoration: none;
+    }
+    .dropdown-content a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+    }
+    .intro {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      text-align: justify;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    }
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 20px;
+    }
+    .card-body h3 {
+      margin: 0;
+      font-size: 24px;
+      color: #005a87;
+    }
+    .card-body p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.6;
+    }
+    /* Tabla lista próceres abajo */
+    table.proceres {
+      width: 100%;
+      max-width: 600px;
+      margin: 40px auto 20px auto;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: 18px;
+    }
+    table.proceres th,
+    table.proceres td {
+      padding: 12px 20px;
+      border-bottom: 1px solid #ddd;
+      color: #005a87;
+      text-align: left;
+    }
+    table.proceres thead th {
+      background-color: #005a87;
+      color: white;
+      font-weight: bold;
+    }
+    table.proceres tbody tr:hover {
+      background-color: #f0f8ff;
+    }
+    /* Tabla con fechas */
+    table.fechas {
+      width: 100%;
+      max-width: 700px;
+      margin: 20px auto 40px auto;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      overflow: hidden;
+      font-size: 18px;
+    }
+    table.fechas th,
+    table.fechas td {
+      padding: 12px 20px;
+      border-bottom: 1px solid #ddd;
+      color: #005a87;
+      text-align: left;
+    }
+    table.fechas thead th {
+      background-color: #005a87;
+      color: white;
+      font-weight: bold;
+    }
+    table.fechas tbody tr:hover {
+      background-color: #f0f8ff;
+    }
+    footer {
+      background-color: #003d5b;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      .container {
+        width: 95%;
+      }
+      table.proceres,
+      table.fechas {
+        font-size: 16px;
+        max-width: 100%;
+      }
+    }
